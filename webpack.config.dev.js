@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -12,6 +13,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".json"],
+    alias: {
+      "@images": path.resolve(__dirname, "src/assets/images"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -27,6 +31,21 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        type: "asset/resource",
+      },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets/images"),
+          to: "assets/images",
+        },
+      ],
+    }),
+  ],
+  devServer: { static: path.join(__dirname, "dist") },
 };
