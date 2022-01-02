@@ -1,3 +1,10 @@
 import React from "react";
-
-export const App = () => <h1>Hola este es un texto h1</h1>;
+import { GlobalStyle } from "./styles/GlobalStyles";
+export const App = () => {
+  return (
+    <>
+      <GlobalStyle />
+      <h1>Titulo de prueba</h1>
+    </>
+  );
+};
