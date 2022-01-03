@@ -1,12 +1,15 @@
 import styled from "styled-components";
-import { instagramGradient } from "../../styles/colors";
+import {
+  instagramGradient,
+  shadow,
+} from "../../styles/ColorsShadowsAnimations";
 export const ButtonBase = styled.button`
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 50%;
-  background: #e0e0e0;
-  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  background: #fff;
+  box-shadow: ${shadow("45deg", 5, 10)};
   position: relative;
 `;
 
