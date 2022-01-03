@@ -24,11 +24,6 @@ export const Highlights = () => {
         <Highlight src={highlightImg} topic="Trend ?!" />
         <Highlight src={highlightImg} topic="Travel" />
         <Highlight src={highlightImg} topic="My Dog" />
-        <Highlight src={highlightImg} topic="My Dog" />
-        <Highlight src={highlightImg} topic="My Dog" />
-        <Highlight src={highlightImg} topic="My Dog" />
-        <Highlight src={highlightImg} topic="My Dog" />
-        <Highlight src={highlightImg} topic="My Dog" />
       </CenterWrapper>
     </ScrollMenu>
   );
