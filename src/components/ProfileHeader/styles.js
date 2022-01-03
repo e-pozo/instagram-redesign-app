@@ -17,6 +17,7 @@ export const Div = styled.div`
   grid-template-rows: 1fr;
   width: 100%;
   height: 30vh;
+  min-height: 200px;
 `;
 export const ProfileMainContainer = styled.div`
   display: flex;

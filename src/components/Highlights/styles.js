@@ -8,6 +8,7 @@ export const ScrollMenu = styled.div`
   min-height: 53px;
   height: 8vh;
   white-space: nowrap;
+  margin-top: 7px;
 `;
 
 export const CenterWrapper = styled.ul`
