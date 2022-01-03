@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Notification } from "./styles";
-export const RoundedButton = ({ className, icon, notify }) => {
+export const RoundedButton = ({ className, icon, notify, onClick }) => {
   return (
-    <Button className={className}>
+    <Button className={className} onClick={onClick}>
       {icon}
       {notify && <Notification />}
     </Button>
