@@ -1,14 +1,12 @@
 import React from "react";
 import { Div } from "./styles";
 import { ProfileHeader } from "../../components/ProfileHeader";
-import { ProfilePicture } from "../../components/ProfilePicture";
-import { RoundedButton } from "../../components/RoundedButton";
+import { PostInfo } from "../../components/PostInfo";
 export const Profile = () => {
   return (
     <Div>
       <ProfileHeader />
-      <ProfilePicture />
-      <RoundedButton />
+      <PostInfo />
     </Div>
   );
 };

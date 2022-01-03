@@ -17,11 +17,6 @@ module.exports = {
       "@images": path.resolve(__dirname, "src/assets/images"),
     },
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "src/index.html",
-    }),
-  ],
   module: {
     rules: [
       {
@@ -45,6 +40,9 @@ module.exports = {
           to: "assets/images",
         },
       ],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
     }),
   ],
   devServer: { static: path.join(__dirname, "dist") },
