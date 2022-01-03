@@ -9,6 +9,17 @@ export const PhotoGrid = () => {
       <Img src={puppy} />
       <Img src={puppy} />
       <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
+      <Img src={puppy} />
     </Grid>
   );
 };
