@@ -1,11 +1,15 @@
 import styled from "styled-components";
-import { GREY } from "../../styles/ColorsShadowsAnimations";
+import { GREY, shadow } from "../../styles/ColorsShadowsAnimations";
 
 export const Flex = styled.div`
-  width: 100%;
+  width: 80%;
   height: 6vh;
+  min-height: 32px;
   display: flex;
   justify-content: space-evenly;
+  margin: 0 auto;
+  box-shadow: ${shadow("45deg", 5, 10)};
+  border-radius: 5px;
 `;
 
 export const Number = styled.h2`
@@ -18,7 +22,7 @@ export const Subject = styled.h2`
 `;
 
 export const StatsContainer = styled.div`
-  height: 100%;
   width: 50px;
   text-align: center;
+  margin: auto 0;
 `;
