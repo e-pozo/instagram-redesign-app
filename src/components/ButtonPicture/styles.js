@@ -11,7 +11,7 @@ export const ButtonBase = styled.button`
   background: #fff;
   box-shadow: ${shadow("45deg", 5, 10)};
   position: relative;
-  ${(props) => (!props.decorated ? "padding: 7px" : "")}
+  ${(props) => (!props.decorated ? `padding: ${props.padding}` : "")}
 `;
 
 export const Decoration = styled.div`
