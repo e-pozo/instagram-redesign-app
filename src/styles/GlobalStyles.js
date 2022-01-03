@@ -19,6 +19,5 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 500px;
     overscroll-behavior: none;
     box-shadow: 0px 0 5px rgba(0,0,0,.2);
-    ${"" /* width: ; */}
   }
 `;

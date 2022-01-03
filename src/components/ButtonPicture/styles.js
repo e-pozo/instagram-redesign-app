@@ -4,18 +4,19 @@ import {
   shadow,
 } from "../../styles/ColorsShadowsAnimations";
 export const ButtonBase = styled.button`
-  width: 100px;
-  height: 100px;
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
   border: none;
   border-radius: 50%;
   background: #fff;
   box-shadow: ${shadow("45deg", 5, 10)};
   position: relative;
+  ${(props) => (!props.decorated ? "padding: 7px" : "")}
 `;
 
 export const Decoration = styled.div`
-  width: 90px;
-  height: 90px;
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
   border-radius: 50%;
   background: ${instagramGradient(45)};
   position: absolute;

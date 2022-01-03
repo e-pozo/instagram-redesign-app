@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ProfilePicture as ProfilePictureBase } from "../ProfilePicture";
+import { ButtonPicture as ButtonPictureBase } from "../ButtonPicture";
 import { H1 as H1Base } from "../H1";
 import { RoundedButton as RoundedButtonBase } from "../RoundedButton";
 import { TransparentButton } from "../TransparentButton";
@@ -29,8 +29,9 @@ export const ProfileMainContainer = styled.div`
 export const H1 = styled(H1Base)`
   margin-top: 10px;
   text-align: center;
+  padding: 0 10px;
 `;
-export const ProfilePicture = styled(ProfilePictureBase)`
+export const ButtonPicture = styled(ButtonPictureBase)`
   margin: 0 auto;
 `;
 
