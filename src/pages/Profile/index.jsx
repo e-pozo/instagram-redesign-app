@@ -1,16 +1,16 @@
 import React from "react";
-import { Div } from "./styles";
 import { ProfileHeader } from "../../components/ProfileHeader";
 import { PostInfo } from "../../components/PostInfo";
 import { Highlights } from "../../components/Highlights";
 import { PhotoGrid } from "../../components/PhotosGrid";
+import { SPALayout } from "../SPAScroll";
 export const Profile = () => {
   return (
-    <Div>
+    <SPALayout>
       <ProfileHeader />
       <PostInfo />
       <Highlights />
       <PhotoGrid />
-    </Div>
+    </SPALayout>
   );
 };
