@@ -5,7 +5,7 @@ export const ScrollMenu = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
-  min-height: 53px;
+  min-height: 55px;
   height: 8vh;
   white-space: nowrap;
   margin-top: 7px;

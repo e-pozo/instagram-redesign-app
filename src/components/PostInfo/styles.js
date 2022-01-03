@@ -4,7 +4,7 @@ import { GREY, shadow } from "../../styles/ColorsShadowsAnimations";
 export const Flex = styled.div`
   width: 80%;
   height: 6vh;
-  min-height: 32px;
+  min-height: 40px;
   display: flex;
   justify-content: space-evenly;
   margin: 0 auto;
