@@ -6,7 +6,7 @@ import {
   ButtonPicture,
   FavoriteButton,
   ChatButton,
-  EditButton,
+  BackButton,
   ConfigButton,
 } from "./styles";
 import dogPicture from "@images/photo-1518155317743-a8ff43ea6a5f.jpeg";
@@ -14,7 +14,7 @@ import dogPicture from "@images/photo-1518155317743-a8ff43ea6a5f.jpeg";
 export const ProfileHeader = () => {
   return (
     <Div>
-      <EditButton />
+      <BackButton />
       <ChatButton notify={true} />
       <ProfileMainContainer>
         <ButtonPicture decorated={true} size={100} src={dogPicture} />

@@ -4,7 +4,7 @@ import { H1 as H1Base } from "../H1";
 import { RoundedIconButtonHOC } from "../IconButtonsHOCs/RoundedIconButton";
 import { IconButtonHOC } from "../IconButtonsHOCs/IconButton";
 import { MdFavorite, MdChatBubble } from "react-icons/md";
-import { BiEdit, BiCog } from "react-icons/bi";
+import { BiArrowBack, BiCog } from "react-icons/bi";
 
 export const Div = styled.div`
   display: grid;
@@ -44,7 +44,7 @@ export const ChatButton = styled(RoundedIconButtonHOC(MdChatBubble))`
   margin-bottom: 40px;
 `;
 
-export const EditButton = styled(IconButtonHOC(BiEdit))`
+export const BackButton = styled(IconButtonHOC(BiArrowBack))`
   margin-top: 15px;
   grid-column: 1 / 2;
 `;
