@@ -44,7 +44,7 @@ export const ChatButton = styled(RoundedIconButtonHOC(MdChatBubble))`
   margin-bottom: 40px;
 `;
 
-export const BackButton = styled(IconButtonHOC(BiArrowBack))`
+export const BackButton = styled(IconButtonHOC(BiArrowBack, undefined, true))`
   margin-top: 15px;
   grid-column: 1 / 2;
 `;

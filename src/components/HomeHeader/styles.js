@@ -11,6 +11,6 @@ export const Header = styled.section`
   padding: 0 15px;
 `;
 
-export const PersonButton = IconButtonHOC(MdPersonOutline);
+export const PersonButton = IconButtonHOC(MdPersonOutline, undefined, true);
 
 export const SearchButton = IconButtonHOC(MdOutlineSearch);

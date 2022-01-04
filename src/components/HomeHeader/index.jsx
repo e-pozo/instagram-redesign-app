@@ -4,7 +4,7 @@ import { Logo } from "../Logo";
 export const HomeHeader = () => {
   return (
     <Header>
-      <PersonButton />
+      <PersonButton to="/profile" />
       <Logo />
       <SearchButton />
     </Header>

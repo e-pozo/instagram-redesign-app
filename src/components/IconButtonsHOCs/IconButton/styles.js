@@ -1,6 +1,7 @@
 import styled from "styled-components";
-
-export const Button = styled.button`
+import { Link } from "react-router-dom";
+export const ButtonConstructor = (isLink) => {
+  const style = `
   border: none;
   background: rgba(0, 0, 0, 0);
   width: 25px;
@@ -8,3 +9,12 @@ export const Button = styled.button`
   display: grid;
   justify-self: center;
 `;
+
+  return isLink
+    ? styled(Link)`
+        ${style}
+      `
+    : styled.button`
+        ${style}
+      `;
+};
