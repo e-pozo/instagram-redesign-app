@@ -6,8 +6,8 @@ export const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Home />
-      {/* <Profile /> */}
+      {/* <Home /> */}
+      <Profile />
     </>
   );
 };

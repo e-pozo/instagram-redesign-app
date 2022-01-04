@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IconButtonHOC } from "../IconButton";
+import { IconButtonHOC } from "../IconButtonsHOCs/IconButton";
 import { MdPersonOutline, MdOutlineSearch } from "react-icons/md";
 
 export const Header = styled.section`

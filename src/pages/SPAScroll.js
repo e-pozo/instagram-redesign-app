@@ -5,5 +5,5 @@ export const SPALayout = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;

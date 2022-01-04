@@ -1,15 +1,11 @@
 import styled from "styled-components";
 import { ButtonPicture as ButtonPictureBase } from "../ButtonPicture";
 import { H1 as H1Base } from "../H1";
-import { RoundedButton as RoundedButtonBase } from "../RoundedButton";
-import { IconButtonHOC } from "../IconButton";
-import {
-  MdFavorite as MdFavoriteBase,
-  MdChatBubble as MdChatBubbleBase,
-} from "react-icons/md";
+import { RoundedIconButtonHOC } from "../IconButtonsHOCs/RoundedIconButton";
+import { IconButtonHOC } from "../IconButtonsHOCs/IconButton";
+import { MdFavorite, MdChatBubble } from "react-icons/md";
 import { BiEdit, BiCog } from "react-icons/bi";
 
-import { GREY } from "../../styles/ColorsShadowsAnimations";
 export const Div = styled.div`
   display: grid;
   position: relative;
@@ -36,35 +32,16 @@ export const ButtonPicture = styled(ButtonPictureBase)`
   margin: 0 auto;
 `;
 
-const RoundedButton = styled(RoundedButtonBase)`
+export const FavoriteButton = styled(RoundedIconButtonHOC(MdFavorite))`
   align-self: end;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-column: 4 / 5;
   margin-bottom: 40px;
 `;
 
-export const FavoriteButton = styled(RoundedButton)`
-  grid-column: 4 / 5;
-`;
-
-export const ChatButton = styled(RoundedButton)`
+export const ChatButton = styled(RoundedIconButtonHOC(MdChatBubble))`
+  align-self: end;
   grid-column: 2 / 3;
-`;
-
-const IconCenter = (size) => `
-  width: ${size};
-  height: ${size};
-  place-self: center;
-`;
-
-export const MdFavorite = styled(MdFavoriteBase)`
-  ${IconCenter("60%")}
-  color: ${GREY}
-`;
-export const MdChatBubble = styled(MdChatBubbleBase)`
-  ${IconCenter("60%")}
-  color: ${GREY}
+  margin-bottom: 40px;
 `;
 
 export const EditButton = styled(IconButtonHOC(BiEdit))`
