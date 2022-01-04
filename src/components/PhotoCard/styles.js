@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { RED, shadow } from "../../styles/ColorsShadowsAnimations";
+import {
+  BLUE,
+  GREEN,
+  RED,
+  ORANGE,
+  shadow,
+} from "../../styles/ColorsShadowsAnimations";
 import {
   IoChatbubbleOutline,
   IoHeartOutline,
@@ -13,6 +19,7 @@ export const Card = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px 0;
 `;
 
 export const Img = styled.img`
@@ -58,9 +65,9 @@ export const ProfilePicture = styled.img`
   position: inline-block;
 `;
 
-export const BookmarkButton = styled(IconButtonHOC(IoBookmarkOutline, RED))`
+export const BookmarkButton = styled(IconButtonHOC(IoBookmarkOutline, ORANGE))`
   margin: auto;
 `;
-export const ChatButton = RoundedIconButtonHOC(IoChatbubbleOutline);
-export const FavoriteButton = RoundedIconButtonHOC(IoHeartOutline);
-export const SendButton = RoundedIconButtonHOC(IoPaperPlaneOutline);
+export const ChatButton = RoundedIconButtonHOC(IoChatbubbleOutline, GREEN);
+export const FavoriteButton = RoundedIconButtonHOC(IoHeartOutline, RED);
+export const SendButton = RoundedIconButtonHOC(IoPaperPlaneOutline, BLUE);
