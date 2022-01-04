@@ -1,6 +1,8 @@
 export const VIOLET = "#833ab4";
 export const RED = "#fd1d1d";
+export const BLUE = "#5390d9";
 export const ORANGE = "#fcb045";
+export const GREEN = "#06d6a0";
 export const GREY = "#8a8a8a";
 export const BLACK = "#171717";
 const { sin, cos, PI, round } = Math;
