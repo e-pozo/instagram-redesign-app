@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import { shadow } from "../../styles/ColorsShadowsAnimations";
+import { RED, shadow } from "../../styles/ColorsShadowsAnimations";
 import {
   IoChatbubbleOutline,
   IoHeartOutline,
   IoPaperPlaneOutline,
+  IoBookmarkOutline,
 } from "react-icons/io5";
 import { RoundedIconButtonHOC } from "../IconButtonsHOCs/RoundedIconButton";
+import { IconButtonHOC } from "../IconButtonsHOCs/IconButton";
 export const Card = styled.section`
   width: 100%;
   display: flex;
@@ -34,7 +36,7 @@ export const Legend = styled.div`
   border-radius: 5px;
   box-shadow: ${shadow("45deg", 5, 10)};
   margin: 7px 0;
-  padding: 0 7px;
+  padding-left: 7px;
 `;
 
 export const UserDescriptor = styled.div`
@@ -56,6 +58,9 @@ export const ProfilePicture = styled.img`
   position: inline-block;
 `;
 
+export const BookmarkButton = styled(IconButtonHOC(IoBookmarkOutline, RED))`
+  margin: auto;
+`;
 export const ChatButton = RoundedIconButtonHOC(IoChatbubbleOutline);
 export const FavoriteButton = RoundedIconButtonHOC(IoHeartOutline);
 export const SendButton = RoundedIconButtonHOC(IoPaperPlaneOutline);

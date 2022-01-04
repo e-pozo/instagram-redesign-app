@@ -8,6 +8,7 @@ import {
   ChatButton,
   FavoriteButton,
   SendButton,
+  BookmarkButton,
   UserDescriptor,
   Span,
 } from "./styles";
@@ -24,6 +25,7 @@ export const PhotoCard = () => {
             <b>El Dogo</b> - Perrito sentado de pana
           </Span>
         </UserDescriptor>
+        <BookmarkButton />
       </Legend>
       <Img src={dogPhoto} />
       <ButtonActions>
