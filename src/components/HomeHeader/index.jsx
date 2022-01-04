@@ -1,14 +1,11 @@
 import React from "react";
-import { Header } from "./styles";
-import { IconButtonHOC } from "../IconButton";
-import { MdPersonOutline, MdOutlineSearch } from "react-icons/md";
-const PersonButton = IconButtonHOC(MdPersonOutline);
-const SearchButton = IconButtonHOC(MdOutlineSearch);
-
+import { Header, PersonButton, SearchButton } from "./styles";
+import { Logo } from "../Logo";
 export const HomeHeader = () => {
   return (
     <Header>
       <PersonButton />
+      <Logo />
       <SearchButton />
     </Header>
   );

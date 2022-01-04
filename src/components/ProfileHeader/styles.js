@@ -68,9 +68,11 @@ export const MdChatBubble = styled(MdChatBubbleBase)`
 `;
 
 export const EditButton = styled(IconButtonHOC(BiEdit))`
+  margin-top: 15px;
   grid-column: 1 / 2;
 `;
 
 export const ConfigButton = styled(IconButtonHOC(BiCog))`
+  margin-top: 15px;
   grid-column: 5 / 6;
 `;
