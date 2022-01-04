@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { ButtonPicture as ButtonPictureBase } from "../ButtonPicture";
 import { H1 as H1Base } from "../H1";
 import { RoundedButton as RoundedButtonBase } from "../RoundedButton";
-import { TransparentButton } from "../TransparentButton";
+import { IconButtonHOC } from "../IconButton";
 import {
   MdFavorite as MdFavoriteBase,
   MdChatBubble as MdChatBubbleBase,
 } from "react-icons/md";
-import { BiEdit as BiEditBase, BiCog as BiCogBase } from "react-icons/bi";
+import { BiEdit, BiCog } from "react-icons/bi";
 
-import { BLACK, GREY } from "../../styles/ColorsShadowsAnimations";
+import { GREY } from "../../styles/ColorsShadowsAnimations";
 export const Div = styled.div`
   display: grid;
   position: relative;
@@ -66,20 +66,11 @@ export const MdChatBubble = styled(MdChatBubbleBase)`
   ${IconCenter("60%")}
   color: ${GREY}
 `;
-export const BiCog = styled(BiCogBase)`
-  ${IconCenter("100%")}
-  color: ${BLACK};
-`;
 
-export const BiEdit = styled(BiEditBase)`
-  ${IconCenter("100%")}
-  color: ${BLACK}
-`;
-
-export const EditButton = styled(TransparentButton)`
+export const EditButton = styled(IconButtonHOC(BiEdit))`
   grid-column: 1 / 2;
 `;
 
-export const ConfigButton = styled(TransparentButton)`
+export const ConfigButton = styled(IconButtonHOC(BiCog))`
   grid-column: 5 / 6;
 `;
