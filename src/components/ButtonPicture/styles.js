@@ -10,7 +10,6 @@ export const ButtonBase = styled.button`
   border-radius: 50%;
   background: #fff;
   box-shadow: ${shadow("45deg", 5, 10)};
-  position: relative;
   ${(props) => (!props.decorated ? `padding: ${props.padding}` : "")}
 `;
 
@@ -19,9 +18,7 @@ export const Decoration = styled.div`
   height: ${({ size }) => `${size}px`};
   border-radius: 50%;
   background: ${instagramGradient(45)};
-  position: absolute;
-  top: 5px;
-  left: 5px;
+  margin: auto;
   padding: 2px;
 `;
 

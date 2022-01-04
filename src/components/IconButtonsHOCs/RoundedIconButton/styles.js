@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { shadow, RED } from "../../styles/ColorsShadowsAnimations";
+import { shadow, RED } from "../../../styles/ColorsShadowsAnimations";
 export const Button = styled.button`
   border: none;
   border-radius: 50%;
@@ -8,6 +8,7 @@ export const Button = styled.button`
   height: 40px;
   box-shadow: ${shadow("45deg", 5, 10)};
   position: relative;
+  display: grid;
 `;
 
 export const Notification = styled.div`
